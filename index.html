@@ -12,11 +12,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
+    <link rel="icon" href="assets/images/logos/Logo_Final.png" type="image/x-icon">
     <!-- Estilos Personalizados -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Three.js -->
+    <script src="assets/js/three.min.js"></script>
+    <!-- Vanta.js -->
+    <script src="assets/js/vanta.net.min.js"></script>
 </head>
-<body class="bg-dark text-white">
+<body id="body" class="bg-dark text-white">
 
     <!-- BARRA DE NAVEGACIÓN -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
@@ -57,7 +61,7 @@
             <div class="text-center hero rounded-3 mb-5">
                 <h1 class="display-3">El Renacer de una Saga</h1>
                 <p class="lead col-lg-8 mx-auto">Nuestro análisis a fondo del nuevo "Chronos Echoes". ¿Está a la altura de la leyenda?</p>
-                <a href="#" class="btn btn-primary btn-lg">Leer Reseña</a>
+                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#reseñaModal">Leer Reseña</button>
             </div>
 
             <!-- 2. Video Destacado -->
@@ -117,9 +121,9 @@
             <!-- 2. Reseñas Detalladas -->
             <h2 class="mb-4">Reseñas Detalladas</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
-                <div class="col"><div class="card h-100"><img src="https://placehold.co/600x400/00334d/fff?text=Reseña" class="card-img-top" alt="..."><div class="card-body"><h5 class="card-title">Análisis: Stellaris Prime</h5><p class="card-text">Un 4X que redefine el género espacial.</p></div></div></div>
-                <div class="col"><div class="card h-100"><img src="https://placehold.co/600x400/00334d/fff?text=Reseña" class="card-img-top" alt="..."><div class="card-body"><h5 class="card-title">Análisis: Path of the Ronin</h5><p class="card-text">Combate visceral y una historia inolvidable.</p></div></div></div>
-                <div class="col"><div class="card h-100"><img src="https://placehold.co/600x400/00334d/fff?text=Reseña" class="card-img-top" alt="..."><div class="card-body"><h5 class="card-title">Análisis: Pixel Racers</h5><p class="card-text">Nostalgia y velocidad en este arcade moderno.</p></div></div></div>
+                <div class="col"><div class="card h-100"><img src="assets/images/portadas/stellaris.webp" class="card-img-top" alt="..."><div class="card-body"><h5 class="card-title">Análisis: Stellaris Prime</h5><p class="card-text">Un 4X que redefine el género espacial.</p></div></div></div>
+                <div class="col"><div class="card h-100"><img src="assets/images/portadas/helldivers.jpeg" class="card-img-top" alt="..."><div class="card-body"><h5 class="card-title">Análisis: HellDivers 2</h5><p class="card-text">Combate visceral y una historia inolvidable.</p></div></div></div>
+                <div class="col"><div class="card h-100"><img src="assets/images/portadas/Hogwarts_legacy.png" class="card-img-top" alt="..."><div class="card-body"><h5 class="card-title">Análisis: Hogwarts Legacy</h5><p class="card-text">Nostalgia y velocidad en este arcade moderno.</p></div></div></div>
             </div>
 
             <div class="row">
@@ -131,7 +135,7 @@
                 <!-- 4. El Juego Gratis de la Semana -->
                 <div class="col-12">
                     <h2 class="mb-4">El Juego Gratis de la Semana</h2>
-                    <div class="card text-center p-4 border-primary border-2"><h5 class="card-title">¡Cave Explorer!</h5><p>¡Descárgalo gratis en Steam hasta el domingo!</p><a href="#" class="btn btn-primary">Obtener</a></div>
+                    <div class="card text-center p-4 border-primary border-2"><h5 class="card-title">¡Red Dead Redemption 2!</h5><p>¡Descárgalo gratis en Steam hasta el domingo!</p><a target="_blank" href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/" class="btn btn-primary">Obtener</a></div>
                 </div>
             </div>
         </section>
@@ -253,6 +257,113 @@
             <p class="mb-0">&copy; 2025 Sitio de Videojuegos. Todos los derechos reservados. Un proyecto estudiantil.</p>
         </div>
     </footer>
+
+    <!-- MODAL DE RESEÑA -->
+    <div class="modal fade" id="reseñaModal" tabindex="-1" aria-labelledby="reseñaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header border-secondary">
+                    <h1 class="modal-title fs-4" id="reseñaModalLabel">Chronos Echoes: The Temporal Prison</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Portada del juego -->
+                    <div class="text-center mb-4">
+                        <img src="https://m.media-amazon.com/images/I/81PbYLD7ryL._UF1000,1000_QL80_.jpg" class="img-fluid rounded-3 mb-3" alt="Portada de Chronos Echoes">
+                        <div class="d-flex justify-content-center gap-3 mb-3">
+                            <span class="badge bg-primary fs-6">RPG</span>
+                            <span class="badge bg-primary fs-6">Aventura</span>
+                            <span class="badge bg-primary fs-6">Sci-Fi</span>
+                        </div>
+                        <div class="rating mb-3">
+                            <span class="fs-4 text-warning">★★★★★</span>
+                            <span class="ms-2 fs-5 text-primary">9.8/10</span>
+                        </div>
+                    </div>
+
+                    <!-- Reseña completa -->
+                    <div class="review-content">
+                        <h3 class="text-primary mb-3">El Renacer de una Saga Legendaria</h3>
+                        
+                        <p class="lead mb-4">
+                            Después de siete años de espera, "Chronos Echoes: The Temporal Prison" llega para redefinir lo que significa una experiencia RPG inmersiva. Este título no solo cumple con las expectativas de los fanáticos de la saga original, sino que las supera de manera espectacular.
+                        </p>
+
+                        <h4 class="text-primary mb-3">Una Narrativa Que Te Atrapa</h4>
+                        <p class="mb-4">
+                            La historia sigue a Alex Chen, un crononauta que debe navegar a través de múltiples líneas temporales para evitar el colapso del universo. Lo que hace especial a esta narrativa es cómo cada decisión que tomas realmente impacta el mundo que te rodea. No es solo una ilusión de elección; cada acción tiene consecuencias que se extienden a través de diferentes dimensiones temporales.
+                        </p>
+
+                        <h4 class="text-primary mb-3">Gameplay Revolucionario</h4>
+                        <p class="mb-4">
+                            El sistema de combate temporal es simplemente brillante. La capacidad de manipular el tiempo durante las batallas añade una capa estratégica completamente nueva. Puedes ralentizar el tiempo para planificar tus movimientos, acelerar para ataques rápidos, o incluso retroceder unos segundos para corregir errores. Es como tener un "undo" en la vida real.
+                        </p>
+
+                        <h4 class="text-primary mb-3">Mundo Abierto Temporal</h4>
+                        <p class="mb-4">
+                            El mundo de Chronos Echoes es vasto y cada zona existe en diferentes períodos temporales. Puedes explorar la misma ciudad en el año 2157, 1985, y 3012, viendo cómo tus acciones en el pasado afectan el futuro. La atención al detalle es impresionante; cada época tiene su propia estética, música y mecánicas de juego únicas.
+                        </p>
+
+                        <h4 class="text-primary mb-3">Aspectos Técnicos</h4>
+                        <p class="mb-4">
+                            Gráficamente, el juego es una obra maestra. El motor temporal permite efectos visuales que nunca antes habíamos visto. Las transiciones entre épocas son fluidas y cinematográficas. El audio espacial 3D hace que cada sonido tenga profundidad y dirección, creando una inmersión total.
+                        </p>
+
+                        <h4 class="text-primary mb-3">Lo Que Más Nos Gustó</h4>
+                        <ul class="mb-4">
+                            <li>Sistema de decisiones que realmente importa</li>
+                            <li>Combate temporal innovador y satisfactorio</li>
+                            <li>Mundo vasto con múltiples épocas temporales</li>
+                            <li>Narrativa profunda y bien escrita</li>
+                            <li>Gráficos de nueva generación</li>
+                            <li>Banda sonora épica que se adapta a cada época</li>
+                        </ul>
+
+                        <h4 class="text-primary mb-3">Áreas de Mejora</h4>
+                        <p class="mb-4">
+                            Si tuviéramos que ser críticos, diríamos que la curva de aprendizaje puede ser empinada para jugadores nuevos en la saga. También, algunos puzzles temporales pueden ser frustrantes hasta que entiendes completamente la mecánica.
+                        </p>
+
+                        <h4 class="text-primary mb-3">Veredicto Final</h4>
+                        <p class="mb-4">
+                            "Chronos Echoes: The Temporal Prison" no es solo un juego; es una experiencia que redefine el género RPG. Con una narrativa envolvente, gameplay innovador y una presentación técnica impresionante, este título establece un nuevo estándar para los juegos de aventura temporal.
+                        </p>
+
+                        <div class="alert alert-primary" role="alert">
+                            <strong>Recomendación:</strong> Este juego es imprescindible para cualquier fanático de RPGs y ciencia ficción. Incluso si no has jugado los títulos anteriores, Chronos Echoes es accesible y te enganchará desde el primer minuto.
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <h5 class="text-primary">Puntuación por Categorías</h5>
+                                <ul class="list-unstyled">
+                                    <li>Gráficos: <span class="text-warning">★★★★★</span> 10/10</li>
+                                    <li>Gameplay: <span class="text-warning">★★★★★</span> 9.5/10</li>
+                                    <li>Narrativa: <span class="text-warning">★★★★★</span> 10/10</li>
+                                    <li>Audio: <span class="text-warning">★★★★★</span> 9.8/10</li>
+                                    <li>Innovación: <span class="text-warning">★★★★★</span> 10/10</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="text-primary">Información del Juego</h5>
+                                <ul class="list-unstyled">
+                                    <li><strong>Desarrollador:</strong> Temporal Studios</li>
+                                    <li><strong>Editor:</strong> Quantum Games</li>
+                                    <li><strong>Plataformas:</strong> PC, PS5, Xbox Series X/S</li>
+                                    <li><strong>Fecha de Lanzamiento:</strong> 15 de Octubre, 2025</li>
+                                    <li><strong>Precio:</strong> $69.99 USD</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Compartir Reseña</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
