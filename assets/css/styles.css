@@ -152,3 +152,9 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
     flex-direction: column;
     justify-content: space-between;
 }
+
+/* Estilos para el footer */
+footer {
+    margin-top: 5rem;
+    border-top: 2px solid var(--primary-color);
+}
