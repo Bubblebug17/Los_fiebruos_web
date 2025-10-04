@@ -31,14 +31,6 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
     text-shadow: 0 0 5px var(--primary-color);
 }
 
-.page-section {
-    display: none; /* Oculta todas las páginas por defecto */
-    animation: fadeIn 0.5s ease-in-out;
-}
-
-.page-section.active {
-    display: block; /* Muestra la página activa */
-}
 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
@@ -155,6 +147,5 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 
 /* Estilos para el footer */
 footer {
-    margin-top: 5rem;
-    border-top: 2px solid var(--primary-color);
+    margin-top: 3rem;
 }
