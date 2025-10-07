@@ -1,1 +1,0 @@
-// Archivo de scripts ya no necesario - el sitio ahora usa páginas HTML separadas
