@@ -68,66 +68,82 @@
     </div>
 
     <!-- BARRA DE NAVEGACIÓN -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logos/Logo_Final.png" alt="Los Fiebruos" height="50">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">El Nexo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="resenas.html">Los Rajones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="noticias.html">Las Calientitas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="hardware.html">Los Cachineros</a>
-                    </li>
-                </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logos/Logo_Final.png" alt="Los Fiebruos" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">El Nexo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resenas.html">Los Rajones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="noticias.html">Las Calientitas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hardware.html">Los Cachineros</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- CONTENIDO PRINCIPAL -->
     <main class="container py-5" style="min-height: 70vh;">
         <h1 class="text-center mb-5 display-4">Las Calientitas</h1>
 
         <!-- 1. Noticias Recientes -->
-        <div class="row">
-            <div class="col-12 mb-5">
-                <h2 class="mb-4">Recientes</h2>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item bg-transparent text-white">Anunciada la fecha de la próxima GameCon 2026.</li>
-                    <li class="list-group-item bg-transparent text-white">El estudio "PixelHeart" revela su nuevo proyecto de terror.</li>
-                    <li class="list-group-item bg-transparent text-white">"Solaris Arena" supera los 10 millones de jugadores.</li>
-                </ul>
-                 <div class="section-divider"></div>
-                 <!-- 2. Filtraciones o Rumores -->
-                <h2 class="mb-4">Filtraciones y Rumores</h2>
-                <div class="card mb-3"><div class="card-body">Se filtra posible arte conceptual de la secuela de "Aethelgard's Legacy".</div></div>
+        <section class="mb-5">
+            <h2 class="mb-4">Recientes</h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent text-white">Anunciada la fecha de la próxima GameCon 2026.</li>
+                <li class="list-group-item bg-transparent text-white">El estudio "PixelHeart" revela su nuevo proyecto de terror.</li>
+                <li class="list-group-item bg-transparent text-white">"Solaris Arena" supera los 10 millones de jugadores.</li>
+            </ul>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- 2. Filtraciones o Rumores -->
+        <section class="mb-5">
+            <h2 class="mb-4">Filtraciones y Rumores</h2>
+            <article class="card">
+                <div class="card-body">Se filtra posible arte conceptual de la secuela de "Aethelgard's Legacy".</div>
+            </article>
+        </section>
+
+        <!-- 3. Eventos -->
+        <section class="mb-5">
+            <h2 class="mb-4">Eventos</h2>
+            <article class="card">
+                <div class="card-body">
+                    <h3 class="card-title h5">Summer Game Fest</h3>
+                    <p><time datetime="2026-06-10">10 de Junio, 2026</time></p>
+                </div>
+            </article>
+        </section>
+
+        <!-- 4. Tendencias -->
+        <section style="padding-bottom: 12rem;">
+            <h2 class="mb-4">Tendencias</h2>
+            <div class="text-center">
+                <span class="badge bg-primary p-3 m-2">#IndieDev</span>
+                <span class="badge bg-primary p-3 m-2">#Cyberpunk</span>
+                <span class="badge bg-primary p-3 m-2">#Roguelike</span>
+                <br>
+                <span class="badge bg-primary p-3 m-2 mt-3">#GamesAwards2025</span>
+                <span class="badge bg-primary p-3 m-2 mt-3">#steam</span>
             </div>
-             <!-- 3 & 4. Eventos y Tendencias -->
-            <div class="col-12" style="padding-bottom: 12rem;">
-                 <h2 class="mb-4">Eventos</h2>
-                 <div class="card mb-5"><div class="card-body"><h5 class="card-title">Summer Game Fest</h5><p>10 de Junio, 2026</p></div></div>
-                 <h2 class="mb-4">Tendencias</h2>
-                 <div class="text-center">
-                    <span class="badge bg-primary p-3 m-2">#IndieDev</span>
-                    <span class="badge bg-primary p-3 m-2">#Cyberpunk</span>
-                    <span class="badge bg-primary p-3 m-2">#Roguelike</span>
-                    <br>
-                    <span class="badge bg-primary p-3 m-2 mt-3">#GamesAwards2025</span>
-                    <span class="badge bg-primary p-3 m-2 mt-3">#steam</span>
-                 </div>
-            </div>
-        </div>
+        </section>
     </main>
 
     <!-- Divisor antes del footer -->

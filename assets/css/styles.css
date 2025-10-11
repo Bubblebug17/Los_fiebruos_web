@@ -366,3 +366,11 @@ footer {
         font-size: 18px;
     }
 }
+
+.fg-resenia {
+    height: 90%;
+}
+
+.fg-resenia img {
+    height: 100%;
+}
