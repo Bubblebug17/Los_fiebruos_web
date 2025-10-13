@@ -68,63 +68,122 @@
     </div>
 
     <!-- BARRA DE NAVEGACIÓN -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logos/Logo_Final.png" alt="Los Fiebruos" height="50">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">El Nexo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="resenas.html">Los Rajones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="noticias.html">Las Calientitas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="hardware.html">Los Cachineros</a>
-                    </li>
-                </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logos/Logo_Final.png" alt="Los Fiebruos" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">El Nexo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="resenas.html">Los Rajones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="noticias.html">Las Calientitas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hardware.html">Los Cachineros</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- CONTENIDO PRINCIPAL -->
     <main class="container py-5" style="min-height: 70vh;">
         <h1 class="text-center mb-5 display-4">Los Rajones</h1>
 
         <!-- 1. Comparativas -->
-        <h2 class="mb-4">Comparativas</h2>
-        <div class="row mb-5">
-            <div class="col-12 mb-4"><div class="card p-3 text-center"><h3>Clash Royale</h3><p>VS</p><h3>Rumble</h3></div></div>
-            <div class="col-12"><div class="card p-3 text-center"><h3>Temple Run</h3><p>VS</p><h3>Subway Surfers</h3></div></div>
-        </div>
+        <section class="mb-5">
+            <h2 class="mb-4">Comparativas</h2>
+            <div class="row">
+                <article class="col-12 mb-4">
+                    <div class="card p-3 text-center">
+                        <h3 class="h5">Clash Royale</h3>
+                        <p class="mb-0">VS</p>
+                        <h3 class="h5">Rumble</h3>
+                    </div>
+                </article>
+                <article class="col-12">
+                    <div class="card p-3 text-center">
+                        <h3 class="h5">Temple Run</h3>
+                        <p class="mb-0">VS</p>
+                        <h3 class="h5">Subway Surfers</h3>
+                    </div>
+                </article>
+            </div>
+        </section>
 
         <!-- 2. Reseñas Detalladas -->
-        <h2 class="mb-4">Reseñas Detalladas</h2>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
-            <div class="col"><div class="card h-100"><img src="assets/images/portadas/stellaris.webp" class="card-img-top" alt="..."><div class="card-body"><h5 class="card-title">Análisis: Stellaris Prime</h5><p class="card-text">Un 4X que redefine el género espacial.</p></div></div></div>
-            <div class="col"><div class="card h-100"><img src="assets/images/portadas/helldivers.jpeg" class="card-img-top" alt="..."><div class="card-body"><h5 class="card-title">Análisis: HellDivers 2</h5><p class="card-text">Combate visceral y una historia inolvidable.</p></div></div></div>
-            <div class="col"><div class="card h-100"><img src="assets/images/portadas/Hogwarts_legacy.png" class="card-img-top" alt="..."><div class="card-body"><h5 class="card-title">Análisis: Hogwarts Legacy</h5><p class="card-text">Nostalgia y velocidad en este arcade moderno.</p></div></div></div>
-        </div>
+        <section class="mb-5">
+            <h2 class="mb-4">Reseñas Detalladas</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <article class="col">
+                    <div class="card h-100">
+                        <figure class="m-0 fg-resenia">
+                            <img src="assets/images/portadas/stellaris.webp" class="card-img-top" alt="Portada Stellaris Prime">
+                        </figure>
+                        <div class="card-body">
+                            <h3 class="card-title h5">Análisis: Stellaris Prime</h3>
+                            <p class="card-text">Un 4X que redefine el género espacial.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col">
+                    <div class="card h-100">
+                        <figure class="m-0 fg-resenia">
+                            <img src="assets/images/portadas/helldivers.jpeg" class="card-img-top" alt="Portada HellDivers 2">
+                        </figure>
+                        <div class="card-body">
+                            <h3 class="card-title h5">Análisis: HellDivers 2</h3>
+                            <p class="card-text">Combate visceral y una historia inolvidable.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col">
+                    <div class="card h-100">
+                        <figure class="m-0 fg-resenia">
+                            <img src="assets/images/portadas/Hogwarts_legacy.png" class="card-img-top" alt="Portada Hogwarts Legacy">
+                        </figure>
+                        <div class="card-body">
+                            <h3 class="card-title h5">Análisis: Hogwarts Legacy</h3>
+                            <p class="card-text">Nostalgia y velocidad en este arcade moderno.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
 
         <div class="row">
             <!-- 3. Entrevistas -->
-            <div class="col-12 mb-4">
+            <section class="col-12 mb-4">
                 <h2 class="mb-4">Entrevistas</h2>
-                <div class="card"><div class="card-body"><h5 class="card-title">Hablamos con el director de "Voidfall"</h5><p>Nos cuenta los secretos del desarrollo.</p></div></div>
-            </div>
+                <article class="card">
+                    <div class="card-body">
+                        <h3 class="card-title h5">Hablamos con el director de "Voidfall"</h3>
+                        <p>Nos cuenta los secretos del desarrollo.</p>
+                    </div>
+                </article>
+            </section>
             <!-- 4. El Juego Gratis de la Semana -->
-            <div class="col-12">
-                <h2 class="mb-4">El Juego Gratis de la Semana</h2>
-                <div class="card text-center p-4 border-primary border-2"><h5 class="card-title">¡Red Dead Redemption 2!</h5><p>¡Descárgalo gratis en Steam hasta el domingo!</p><a target="_blank" href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/" class="btn btn-primary">Obtener</a></div>
-            </div>
+            <aside class="col-12">
+                <section>
+                    <h2 class="mb-4">El Juego Gratis de la Semana</h2>
+                    <article class="card text-center p-4 border-primary border-2">
+                        <h3 class="card-title h5">¡Red Dead Redemption 2!</h3>
+                        <p>¡Descárgalo gratis en Steam hasta el domingo!</p>
+                        <a target="_blank" href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/" class="btn btn-primary">Obtener</a>
+                    </article>
+                </section>
+            </aside>
         </div>
     </main>
 

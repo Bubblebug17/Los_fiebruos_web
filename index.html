@@ -68,84 +68,90 @@
     </div>
 
     <!-- BARRA DE NAVEGACIÓN -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="assets/images/logos/Logo_Final.png" alt="Los Fiebruos" height="50">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">El Nexo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="resenas.html">Los Rajones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="noticias.html">Las Calientitas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="hardware.html">Los Cachineros</a>
-                    </li>
-                </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/logos/Logo_Final.png" alt="Los Fiebruos" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">El Nexo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resenas.html">Los Rajones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="noticias.html">Las Calientitas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hardware.html">Los Cachineros</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- CONTENIDO PRINCIPAL -->
     <main class="container py-5">
         <h1 class="text-center mb-5 display-4">El Nexo</h1>
             
             <!-- 1. Ultimo Artículo (Hero) -->
-            <div class="text-center hero rounded-3 mb-5">
-                <h1 class="display-3">El Renacer de una Saga</h1>
+            <section class="text-center hero rounded-3 mb-5">
+                <h2 class="display-3">El Renacer de una Saga</h2>
                 <p class="lead col-lg-8 mx-auto">Nuestro análisis a fondo del nuevo "Chronos Echoes". ¿Está a la altura de la leyenda?</p>
                 <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#reseñaModal">Leer Reseña</button>
-            </div>
+            </section>
 
             <!-- 2. Video Destacado -->
-            <h2 class="text-center mb-4">Video Destacado</h2>
-            <div class="row align-items-center mb-5">
-                <div class="col-12 mb-4">
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://www.youtube.com/embed/g4Hbz2jLxvQ" title="Placeholder Video" allowfullscreen></iframe>
+            <section class="mb-5">
+                <h2 class="text-center mb-4">Video Destacado</h2>
+                <article class="row align-items-center">
+                    <div class="col-12 mb-4">
+                        <figure class="ratio ratio-16x9 m-0">
+                            <iframe src="https://www.youtube.com/embed/g4Hbz2jLxvQ" title="Gameplay Exclusivo Galaxy Raiders" allowfullscreen></iframe>
+                        </figure>
                     </div>
-                </div>
-                <div class="col-12">
-                    <h3>Gameplay Exclusivo: 15 Minutos de Pura Acción</h3>
-                    <p>Te mostramos en exclusiva cómo se sienten los combates y la exploración en el mundo abierto de "Galaxy Raiders".</p>
-                </div>
-            </div>
+                    <div class="col-12">
+                        <h3>Gameplay Exclusivo: 15 Minutos de Pura Acción</h3>
+                        <p>Te mostramos en exclusiva cómo se sienten los combates y la exploración en el mundo abierto de "Galaxy Raiders".</p>
+                    </div>
+                </article>
+            </section>
 
             <div class="section-divider"></div>
 
             <div class="row">
                  <!-- 3. Ranking de Juegos -->
-                <div class="col-12 mb-4">
+                <section class="col-12 mb-4">
                     <h2 class="text-center mb-4">Ranking de Juegos</h2>
                     <div class="list-group">
                         <a href="#" class="list-group-item list-group-item-action bg-transparent text-white d-flex justify-content-between align-items-center">1. Chronos Echoes <span class="badge bg-primary rounded-pill">9.8</span></a>
                         <a href="#" class="list-group-item list-group-item-action bg-transparent text-white d-flex justify-content-between align-items-center">2. Voidfall <span class="badge bg-primary rounded-pill">9.5</span></a>
                         <a href="#" class="list-group-item list-group-item-action bg-transparent text-white d-flex justify-content-between align-items-center">3. Solaris Arena <span class="badge bg-primary rounded-pill">9.1</span></a>
                     </div>
-                </div>
+                </section>
 
                 <!-- 4. Calendario de Lanzamiento -->
-                <div class="col-12">
+                <section class="col-12">
                     <h2 class="text-center mb-4">Calendario de Lanzamiento</h2>
-                    <div class="card">
+                    <article class="card">
                         <div class="card-body d-flex align-items-center">
-                            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/601150/header.jpg?t=1701395090" class="rounded-3 me-3" alt="Portada de juego de la semana" style="width: 200px; height: 200px; object-fit: cover;">
+                            <figure class="m-0 me-3">
+                                <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/601150/header.jpg?t=1701395090" class="rounded-3" alt="Portada Devil May Cry 5" style="width: 200px; height: 200px; object-fit: cover;">
+                            </figure>
                             <div>
-                                <h5 class="card-title mb-1">Devil May Cry 5</h5>
-                                <p class="card-text mb-0"><small class="text-muted">Lanzamiento: 25 de Octubre, 2025</small></p>
+                                <h3 class="h5 mb-1">Devil May Cry 5</h3>
+                                <p class="mb-0"><small class="text-muted">Lanzamiento: <time datetime="2025-10-25">25 de Octubre, 2025</time></small></p>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </article>
+                </section>
             </div>
 
     </main>
