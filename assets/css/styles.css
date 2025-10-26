@@ -374,3 +374,15 @@ footer {
 .fg-resenia img {
     height: 100%;
 }
+
+.article-comparativa {
+    height: 500px;
+}
+.div-comparativa {
+    height: 100%;
+}
+
+.img-comparativa {
+    object-position: center 65%;
+    height: 100%;
+}
